@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ContactManager</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="contactName">Name</string>
+    <string name="searchTag">Search Contacts</string>
+    <string name="Edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="addContacts">Add Contacts</string>
+    <string name="searchContacts">Search Contacts</string>
+    <string name="addContactMsg">Enter Contact\'s Details</string>
+    <string name="addContactName">Name</string>
+    <string name="addContactPhone">Phone</string>
+    <string name="addContactEmail">Email</string>
+    <string name="addContactButton">Add Contact</string>
+    <string name="contactDetailsMsg">Contact Details</string>
+    <string name="contactDetailsPhone">Phone</string>
+    <string name="contactDetailsEmail">Email</string>
+    <string name="contactDetailsSave">Save</string>
+    <string name="searchButton">Search</string>
+</resources>

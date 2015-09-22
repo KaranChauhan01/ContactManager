@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/contactDetailsMsg"
+            android:id="@+id/deails_msg"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_alignParentRight="false"
+            android:paddingTop="15sp"
+            android:paddingBottom="10sp"
+            android:paddingLeft="6sp"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deails_msg"
+            android:id="@+id/nameLayout">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contactName"
+                android:id="@+id/nameTag"
+                android:paddingLeft="15sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:singleLine="false"
+                android:textColor="@android:color/holo_blue_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameLayout"
+            android:id="@+id/phoneLayout">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contactDetailsPhone"
+                android:id="@+id/phoneTag"
+                android:paddingLeft="15sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:singleLine="false"
+                android:textColor="@android:color/holo_blue_light" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phoneLayout"
+            android:id="@+id/emailLayout">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contactDetailsEmail"
+                android:id="@+id/emailTag"
+                android:paddingLeft="15sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:singleLine="false"
+                android:textColor="@android:color/holo_blue_light" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contactDetailsSave"
+            android:id="@+id/saveButton"
+            android:layout_alignParentBottom="true"
+            android:onClick="saveEditedDetails"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>

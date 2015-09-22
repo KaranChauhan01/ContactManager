@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/searchTag"
+        android:id="@+id/searchContact_msg"
+        android:padding="15sp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/search_name"
+        android:layout_below="@+id/searchContact_msg"
+        android:hint="@string/addContactName"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:paddingBottom="10sp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/search_phone"
+        android:hint="@string/addContactPhone"
+        android:layout_below="@+id/search_name"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/search_email"
+        android:layout_below="@+id/search_phone"
+        android:hint="@string/addContactEmail"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:paddingTop="10sp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/searchButton"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:onClick="showSearchFragment" />
+
+</RelativeLayout>
+</LinearLayout>
